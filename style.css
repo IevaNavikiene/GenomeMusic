@@ -217,7 +217,7 @@ font-family: 'Paytone One', sans-serif;
 
 .switch label {
 	color: #fff;
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 300;
 	line-height: 64px;
 	text-transform: uppercase;
@@ -230,7 +230,7 @@ font-family: 'Paytone One', sans-serif;
 }
 
 .switch label:nth-of-type(1) {
-	left: -110%;
+	left: -100%;
 	position: absolute;
 	text-align: right;
 }
