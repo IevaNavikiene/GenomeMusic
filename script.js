@@ -28,8 +28,8 @@ var i = 0;
 
 
 
-function playing1(){
-    var b = document.getElementById("button1");
+function playing1(id){
+    var b = document.getElementById(id);
     if(b.classList.contains('playing')){
       i=999999;
       b.classList.remove("playing");
@@ -42,8 +42,8 @@ function playing1(){
 }
 
 
-function playing2(){
-    var b = document.getElementById("button2");
+function playing2(e){
+    var b = document.getElementById(e);
     if(b.classList.contains('playing')){
       i=999999;
       b.classList.remove("playing");
@@ -57,13 +57,9 @@ function playing2(){
 
 
 
-function mSound(){
-  var e = document.getElementById("mSelect");
-  playing2();
-  var selectedValue = e.options[e.selectedIndex].value;
-  console.log(mGen[selectedValue]);
-  console.log(selectedValue);
-  playMSound(selectedValue);
+function mSound(e){
+  playing2(e.id);
+  playMSound(e.id);
 }
 
 
@@ -78,17 +74,15 @@ audio.load();
      if (i < mGen[selectedValue].length) {
         playMSound(selectedValue);
      }
-  }, 500);
+  }, 300);
 }
 
 
-function hSound(){
-  playing1();
-  var e = document.getElementById("hSelect");
-  var selectedValue = e.options[e.selectedIndex].value;
-  console.log(hGen[selectedValue]);
-  console.log(selectedValue);
-  playHSound(selectedValue);
+function hSound(e){
+  console.log(e.id);
+  playing1(e.id);
+
+  playHSound(e.id);
 }
 
 

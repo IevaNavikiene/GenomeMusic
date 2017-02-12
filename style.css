@@ -53,13 +53,10 @@ html {
 body, html {
     width: 100%;
     height: 100%;
-    background:
-    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
-    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
-    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
-    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
-    background-color: slategray;
-    background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    background:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+
 }
 
 
@@ -67,12 +64,13 @@ body, html {
     width: 100%;
     height: auto;
     margin-top: 100px;
-    text-align: center;
+
     font-size: 50px;
-    text-transform: uppercase;
-    font-family: 'Passion One', cursive;
-    color: white;
-    background-color: rgba(157, 55, 200, 0.63);
+
+}
+.header img{
+	align: left;
+	margin-left: 8%;
 }
 
 .controls {
@@ -85,7 +83,8 @@ body, html {
 }
 
 .human {
-    width: 50%;
+    width: 40%;
+		margin: 5%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -94,7 +93,8 @@ body, html {
 }
 
 .mouse {
-    width: 50%;
+		width: 40%;
+		margin: 5%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -119,7 +119,8 @@ body, html {
     background-position: center;
 }
 .playing{
-	border: 1px solid red;
+	border: 2px solid white;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 select {
@@ -141,4 +142,28 @@ button {
     font-size: 18px;
     background-color: rgba(240, 240, 240, 0.98);
     font-family: 'Passion One', cursive;
+}
+
+
+.human div{
+	margin: 10px;
+	color: #ff3d74;
+position: relative;
+	 background-color: rgba(0, 0, 0, 0.1);
+	width: 90%;
+	text-align: center;
+font-family: 'Paytone One', sans-serif;
+font-size: 2em;
+}
+.human div:hover{
+	 background-color: rgba(0, 0, 0, 0.2);
+}
+
+.human{
+	margin-top: 50px;
+	border: white 8px solid;
+}
+.mouse{
+		margin-top: 50px;
+	border: black 2px solid;
 }

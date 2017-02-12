@@ -2,46 +2,41 @@
 <html>
 <head>
     <title>Genomemusic</title>
-    <link href="https://fonts.googleapis.com/css?family=Passion+One:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <h1>GenomeMusic</h1>
+       <img src="logo.png"/>
     </div>
 
     <div class="controls">
         <div class="human">
-            <div class="human-image image"></div>
-            <select id="hSelect">
-                <option value="hprotein">G-Protein</option>
-                <option value="hfactor">Blood coagulation factor XIV</option>
-                <option value="hinsulin">Insulin</option>
-                <option value="hreceptor">Estrogen receptor</option>
-                <option value="himmu">Immunoglobulin</option>
-                <option value="hcell">T cell receptor</option>
-                <option value="nucle">Nucleosome assembly protein</option>
 
-            </select>
-            <button id="button1" onclick="hSound()">Play</button>
+                <div onClick="hSound(this)" id="hprotein">G-Protein </div>
+                <div onClick="hSound(this)" id="hfactor">Blood coagulation factor XIV</div>
+                <div onClick="hSound(this)" id="hinsulin">Insulin</div>
+                <div onClick="hSound(this)" id="hreceptor">Estrogen receptor</div>
+                <div onClick="hSound(this)" id="himmu">Immunoglobulin</div>
+                <div onClick="hSound(this)" id="hcell">T cell receptor</div>
+                <div onClick="hSound(this)" id="nucle">Nucleosome assembly protein</div>
+
+
+
         </div>
-        <div class="mouse">
-            <div class="mouse-image image"></div>
-            <select id="mSelect">
-              <option value="mprotein">G-Protein</option>
-              <option value="mfactor">Blood coagulation factor XIV</option>
-              <option value="minsulin">Insulin</option>
-              <option value="mreceptor">Estrogen receptor</option>
-              <option value="mimmu">Immunoglobulin</option>
-              <option value="mcell">T cell receptor</option>
-              <option value="mucle">Nucleosome assembly protein</option>
-            </select>
-            <button id="button2" onclick="mSound()">Play</button>
+        <div class="human">
+              <div onClick="mSound(this)" id="mprotein">G-Protein </div>
+              <div onClick="mSound(this)" id="mfactor">Blood coagulation factor XIV</div>
+              <div onClick="mSound(this)" id="minsulin">Insulin</div>
+              <div onClick="mSound(this)" id="mreceptor">Estrogen receptor</div>
+              <div onClick="mSound(this)" id="mimmu">Immunoglobulin</div>
+              <div onClick="mSound(this)" id="mcell">T cell receptor</div>
+              <div onClick="mSound(this)" id="mucle">Nucleosome assembly protein</div>
+
+
         </div>
     </div>
-    <form>
 
-    </form>
 
 	<script src="script.js"></script>
 
