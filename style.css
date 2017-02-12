@@ -153,6 +153,7 @@ button {
 	text-align: center;
 font-family: 'Paytone One', sans-serif;
 font-size: 2em;
+cursor: pointer;
 }
 
 .mouse2 h1{
@@ -200,6 +201,7 @@ font-family: 'Paytone One', sans-serif;
 
 	right:20em;
 	top:2em;
+	cursor: pointer;
 
 }
 
@@ -210,6 +212,7 @@ font-family: 'Paytone One', sans-serif;
 	height: 64px;
 	position: relative;
 	width: 160px;
+	cursor: pointer;
 }
 
 .switch label {
@@ -246,6 +249,7 @@ font-family: 'Paytone One', sans-serif;
 	top: 0;
 	width: 160px;
 	z-index: 2;
+	cursor: pointer;
 }
 
 .switch input:checked~label:nth-of-type(1) { color: #ff3d74; }
@@ -280,4 +284,5 @@ font-family: 'Paytone One', sans-serif;
 	transition: left .2s ease;
 	width: 56px;
 	z-index: 1;
+	cursor: pointer;
 }
