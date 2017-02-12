@@ -20,7 +20,7 @@ var mGen = {
 };
 
 
-var sound = 'piano';
+var sound = 'sounds';
 
 
 
@@ -68,7 +68,7 @@ function switched(e){
 
 function playMSound(selectedValue){
   setTimeout(function () {
-    var audio = new Audio(`music/${mGen[selectedValue][i]}.mp3`);
+    var audio = new Audio(`${sound}/${mGen[selectedValue][i]}.mp3`);
     audio.preload = 'auto';
 audio.load();
    audio.play();
@@ -92,7 +92,7 @@ function hSound(e){
 
 function playHSound(selectedValue){
   setTimeout(function () {
-    var audio = new Audio(`music/${hGen[selectedValue][i]}.mp3`);
+    var audio = new Audio(`${sound}/${hGen[selectedValue][i]}.mp3`);
    audio.play();
   console.log(i);
      i++;
