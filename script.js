@@ -20,7 +20,7 @@ var mGen = {
 };
 
 
-
+var sound = 'piano';
 
 
 
@@ -62,6 +62,9 @@ function mSound(e){
   playMSound(e.id);
 }
 
+function switched(e){
+  sound=e.className;
+}
 
 function playMSound(selectedValue){
   setTimeout(function () {
@@ -84,6 +87,7 @@ function hSound(e){
 
   playHSound(e.id);
 }
+
 
 
 function playHSound(selectedValue){

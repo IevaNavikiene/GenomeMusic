@@ -8,12 +8,27 @@
 <body>
     <div class="header">
        <img src="logo.png"/>
-    </div>
+
+       <div class="container">
+
+        <div class="switch white">
+
+          <input  onChange="switched(this)" type="radio" name="switch" id="switch-off" class="abstract">
+          <input onChange="switched(this)" type="radio" name="switch" id="switch-on" class="piano" checked>
+
+          <label for="switch-off">Piano</label>
+          <label for="switch-on">Abstract</label>
+
+          <span class="toggle"></span>
+
+        </div> <!-- end switch -->
+   </div>
+  </div>
 
     <div class="controls">
-        <div class="human">
+        <div class="human human2">
 
-                <div onClick="hSound(this)" id="hprotein">G-Protein </div>
+                <div onClick="hSound(this)" class="firstdiv" id="hprotein">G-Protein </div>
                 <div onClick="hSound(this)" id="hfactor">Blood coagulation factor XIV</div>
                 <div onClick="hSound(this)" id="hinsulin">Insulin</div>
                 <div onClick="hSound(this)" id="hreceptor">Estrogen receptor</div>
@@ -21,11 +36,13 @@
                 <div onClick="hSound(this)" id="hcell">T cell receptor</div>
                 <div onClick="hSound(this)" id="nucle">Nucleosome assembly protein</div>
 
+                <h1> human</h1>
+
 
 
         </div>
-        <div class="human">
-              <div onClick="mSound(this)" id="mprotein">G-Protein </div>
+        <div class="human mouse2">
+              <div onClick="mSound(this)" class="firstdiv" id="mprotein">G-Protein </div>
               <div onClick="mSound(this)" id="mfactor">Blood coagulation factor XIV</div>
               <div onClick="mSound(this)" id="minsulin">Insulin</div>
               <div onClick="mSound(this)" id="mreceptor">Estrogen receptor</div>
@@ -33,9 +50,15 @@
               <div onClick="mSound(this)" id="mcell">T cell receptor</div>
               <div onClick="mSound(this)" id="mucle">Nucleosome assembly protein</div>
 
+                <h1> mouse</h1>
+
 
         </div>
-    </div>
+
+
+
+
+ </div>
 
 
 	<script src="script.js"></script>
