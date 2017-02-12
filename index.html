@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Passion+One:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
+<body>
     <div class="header">
         <h1>GenomeMusic</h1>
     </div>
@@ -13,27 +13,34 @@
     <div class="controls">
         <div class="human">
             <div class="human-image image"></div>
-            <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option value="coconut">Chocolate</option>
-                <option value="mango">Mango</option>
+            <select id="hSelect">
+                <option value="hprotein">G-Protein</option>
+                <option value="hfactor">Blood coagulation factor XIV</option>
+                <option value="hinsulin">Insulin</option>
+                <option value="hreceptor">Estrogen receptor</option>
+                <option value="himmu">Immunoglobulin</option>
+                <option value="hcell">T cell receptor</option>
+                <option value="nucle">Nucleosome assembly protein</option>
+
             </select>
-            <button>Play</button>
+            <button id="button1" onclick="hSound()">Play</button>
         </div>
         <div class="mouse">
             <div class="mouse-image image"></div>
-            <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option value="coconut">Chocolate</option>
-                <option value="mango">Mango</option>
+            <select id="mSelect">
+              <option value="mprotein">G-Protein</option>
+              <option value="mfactor">Blood coagulation factor XIV</option>
+              <option value="minsulin">Insulin</option>
+              <option value="mreceptor">Estrogen receptor</option>
+              <option value="mimmu">Immunoglobulin</option>
+              <option value="mcell">T cell receptor</option>
+              <option value="mucle">Nucleosome assembly protein</option>
             </select>
-            <button>Play</button>
+            <button id="button2" onclick="mSound()">Play</button>
         </div>
     </div>
     <form>
-        
+
     </form>
 
 	<script src="script.js"></script>
